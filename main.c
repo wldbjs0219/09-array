@@ -6,21 +6,18 @@
 
 int main(void) {
 	
-	int grade[size];
-	int score[size];
+	int a[size]={1,2,3,4,5};
+	int b[size]={1,2,2,4,5};
 	int i;
 	
 	for(i=0;i<5;i++)
 	{
-		grade[i]=rand()%100;
-	}
-	for (i=0;i<5;i++)
-	{
-	 score[i]=grade[i];
-	}
-	for (i=0;i<5;i++)
-	{
-		printf("score[%d]: %d\n", i, score[i]);
+		if(a[i] != b[i])
+		{
+			printf("%i is different.\n",i );
+		}
+	
+	
 	}
 		
 	
